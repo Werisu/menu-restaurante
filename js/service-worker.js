@@ -2,9 +2,9 @@ const CACHE_NAME = "menu-online-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/styles/style.css",
-  "/scripts/app.js",
-  "/images/logo.png",
+  "/css/main.css",
+  "/js/app.js",
+  "/img/logo.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -18,21 +18,17 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      // Cache hit - return response
       if (response) {
         return response;
       }
 
-      // Clone the request to make a fetch
       const fetchRequest = event.request.clone();
 
       return fetch(fetchRequest).then((response) => {
-        // Check if we received a valid response
         if (!response || response.status !== 200 || response.type !== "basic") {
           return response;
         }
 
-        // Clone the response to use it
         const responseToCache = response.clone();
 
         caches.open(CACHE_NAME).then((cache) => {
