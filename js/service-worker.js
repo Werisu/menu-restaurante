@@ -1,10 +1,10 @@
 const CACHE_NAME = "menu-online-cache-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/css/main.css",
-  "/js/app.js",
-  "/img/logo.png",
+  "/menu-restaurante/",
+  "/menu-restaurante/index.html",
+  "/menu-restaurante/css/main.css",
+  "/menu-restaurante/js/app.js",
+  "/menu-restaurante/img/logo.png",
 ];
 
 self.addEventListener("install", (event) => {
