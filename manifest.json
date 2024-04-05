@@ -1,0 +1,22 @@
+{
+    "name": "Menu On-Line",
+    "short_name": "MENU",
+    "description": "Acesse facilmente o cardápio do seu restaurante favorito com o Menu Online",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "icons": [
+      {
+        "src": "icon-192x192.png",
+        "sizes": "192x192",
+        "type": "img/logo.png"
+      },
+      {
+        "src": "icon-512x512.png",
+        "sizes": "512x512",
+        "type": "img/logo.png"
+      }
+    ]
+  }
+  
