@@ -582,7 +582,7 @@ cardapio.templates = {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
     navigator.serviceWorker
-      .register("/menu-restaurante/serviceWorker.js")
+      .register("/menu-restaurante/js/service-worker.js")
       .then((res) => console.log("service worker registered"))
       .catch((err) => console.log("service worker not registered", err));
   });
