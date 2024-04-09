@@ -1,6 +1,6 @@
 {
-  "name": "Dev'Coffee",
-  "short_name": "DevCoffee",
+  "name": "Menu On-line",
+  "short_name": "MENU",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fdfdfd",
