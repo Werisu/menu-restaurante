@@ -1,16 +1,3 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/menu-restaurante/js/service-worker.js")
-      .then((registration) => {
-        console.log("Service Worker registrado com sucesso:", registration);
-      })
-      .catch((error) => {
-        console.error("Falha ao registrar o Service Worker:", error);
-      });
-  });
-}
-
 $(document).ready(function () {
   cardapio.eventos.init();
 });
@@ -591,3 +578,12 @@ cardapio.templates = {
         </div>
     `,
 };
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("/pwa/serviceWorker.js")
+      .then((res) => console.log("service worker registered"))
+      .catch((err) => console.log("service worker not registered", err));
+  });
+}
