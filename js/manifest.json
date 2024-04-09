@@ -1,11 +1,11 @@
 {
-    "name": "Menu On-Line",
-    "short_name": "MENU",
-    "description": "Acesse facilmente o cardápio do seu restaurante favorito com o Menu Online",
-    "start_url": "/index.html",
+    "name": "Dev'Coffee",
+    "short_name": "DevCoffee",
+    "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#007bff",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
     "icons": [
       {
         "src": "icon-192x192.png",
